@@ -1,0 +1,58 @@
+.body {
+    background-image: url('https://e0.pxfuel.com/wallpapers/646/314/desktop-wallpaper-amazon-rain-forest-brazil-rainforest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: luminosity;
+    position: relative;
+}
+
+.body::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #000;
+    z-index: -1;
+    opacity: .6;
+}
+
+h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+}
+
+section:nth-child(2) > div {
+    background-image: url('https://as1.ftcdn.net/v2/jpg/01/29/82/68/1000_F_129826834_cgeIt3BZYt9BKExiE9lWkC7UjCv89icc.jpg'), linear-gradient(to top, rgb(22, 137, 43), rgb(116, 232, 95));
+    background-position-y: 20%;
+    background-size: cover;
+}
+
+section:nth-child(3) > div {
+    background-image: url('https://images.unsplash.com/photo-1521744167045-2fe394518482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'), linear-gradient(to top, rgb(137, 22, 22), rgb(232, 95, 95));
+    background-position-y: 40%;
+    background-size: cover;
+}
+section:nth-child(4) > div {
+    background-image: url('https://images.unsplash.com/photo-1625944621903-6363f52e88c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80'), linear-gradient(to top, rgb(137, 22, 22), rgb(232, 95, 95));
+    background-position-y: 40%;
+    background-size: cover;
+}
+
+
+
+section > div {
+    height: 200px;
+}
+
+@media screen and (min-width:600px) {
+    section > div {
+        height: 400px;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    section > article > p {
+        width: 60%;
+        margin-inline: auto;
+    }
+}
+
